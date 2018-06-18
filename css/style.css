@@ -1,7 +1,21 @@
 /* Reponsive breakpoints */
+.intro {
+    background-image: linear-gradient(30deg, #fff1eb 0%, #ace0f9 100%);
+    height: 34rem;
+}
+#crewver { 
+    background-color: #f3f3f3; color: #4285f4!important; 
+    padding: 4px 8px; border-radius: 0.09rem; opacity: 0.85;
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+}
+
+.crewIntroH1 {font-size: 11vw;}
+
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
+    .crewIntroH1 {font-size: 2.5rem;}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -11,7 +25,7 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+    #crewver {font-size: 1rem; margin: 0px;}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
