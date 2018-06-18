@@ -51,3 +51,11 @@ CP1796M01 - CUSC APTECH
         <!-- Collapsible content -->
     </nav>
 <!-- End navbar -->
+
+# Cấu trúc khu vực copy
+<div class="wrapCode">
+    <button class="btn-copy" data-toggle="tooltip" data-clipboard-target="#ID" data-placement="right" title="Content of tooltip">Copy</button>
+    <code id="#ID">
+        Your content you want to copy
+    </code>
+</div>

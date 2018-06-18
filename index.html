@@ -71,18 +71,68 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="animated fadeIn mb-4 text-primary crewIntroH1">CREW LIBRARY</h1>
+                    <h1 class="animated fadeIn mb-4 text-primary h1-responsive">CREW LIBRARY</h1>
 
-                    <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+                    <h5 class="animated fadeIn mb-3">Thank you for using our product.
+                        <br class="d-block d-md-none"> We're glad you're with us.</h5>
 
                     <p class="animated fadeIn text-muted">Crew Team</p>
                     <div class="mt-4">
                         <button type="button" class="btn btn-info">GET STARTED</button>
                         <button type="button" class="btn btn-outline-info d-none d-lg-inline">
-                            DOWNLOAD&ensp;<i class="fa fa-download" aria-hidden="true"></i>
+                            DOWNLOAD&ensp;
+                            <i class="fa fa-download" aria-hidden="true"></i>
                         </button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col text-center">
+                <h2>GET STARTED</h2>
+                <div class="row justify-content-center">
+                    <div class="col col-md-8">
+                        <p>
+                            Quickly include Crew's CSS and JS into any project.
+                            <br class="d-none d-md-block"> Use your favorite package manager, download the source, or use the Crew CDN below.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-2">
+                    <div class="col-8">
+                        <img src="img/crewlogo.svg" alt="Crew Logo" width="250px">
+                        <hr>
+                    </div>
+                </div>
+
+                <!-- Start CDN Area -->
+                <div class="row justify-content-center mt-2">
+                    <div class="col-8">
+                        <h2>Crew CDN</h2>
+                        <p>You just need to include Lumito's compiled CSS and JS to your HTML File.</p>
+                        <div class="wrapCode">
+                            <button class="btn-copy" data-toggle="tooltip" data-clipboard-target="#crewCDN" data-placement="right" title="Copy this code">
+                                Copy
+                            </button>
+                            <code id="crewCDN">
+                                <span class="codetag">&lt;link</span>
+                                <span class="codeatt">rel=</span><span class="code3">"stylesheet"</span>
+                                <span class="codeatt">href=</span><span class="codein">"https://example.com/crews.css"</span><span class="codetag">&gt;</span>
+                                <br>
+                                <span class="codetag">&lt;script</span>
+                                <span class="codeatt">type=</span><span class="codein">"text/javascript"</span>
+                                <span class="codeatt">src=</span><span class="codein">"https://example.com/crew.js"</span><span class="codetag">&lt;/script&gt;</span>    
+                            </code>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <p>Tạm ngưng, đi ngủ mai làm tiếp</p>
+                </div>
+
             </div>
         </div>
     </div>
@@ -97,6 +147,8 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
