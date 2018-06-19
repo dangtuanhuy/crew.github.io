@@ -13,9 +13,23 @@
 .crewIntroH1 {font-size: 11vw;}
 
 
+/* Format about us page */
+.card{
+    padding: 1.2rem;
+  
+}
+.social {
+    width: 30px;
+    height: 30px;
+    padding:6px 0px;
+    border-radius: 15px;
+    line-height: 1.4px;
+  }
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .crewIntroH1 {font-size: 2.5rem;}
+
 }
 
 /* Medium devices (tablets, 768px and up) */
