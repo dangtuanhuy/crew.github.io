@@ -52,7 +52,9 @@
                         Contact Us
                     </a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">GitHub</a>
+                        <a class="dropdown-item" href="#">GitHub&ensp;
+                            <i class="fa fa-github pr-1"></i>
+                        </a>
                         <a class="dropdown-item" href="#">Facebook</a>
                         <a class="dropdown-item" href="mailto:jeonkyosin@gmail.com" target="_top">Send Mail</a>
                         <a class="dropdown-item" href="#">About Us</a>
@@ -89,6 +91,7 @@
         </div>
     </div>
 
+    <!-- Start Get Stared -->
     <div class="container-fluid mt-5">
         <div class="row">
             <div class="col text-center">
@@ -102,44 +105,52 @@
                     </div>
                 </div>
                 <div class="row justify-content-center mt-2">
-                    <div class="col-8">
-                        <img src="img/crewlogo.svg" alt="Crew Logo" width="250px">
+                    <div class="col-8 col-md-3">
+                        <img src="img/crewlogo.svg" alt="Crew Logo">
                         <hr>
                     </div>
                 </div>
 
                 <!-- Start CDN Area -->
                 <div class="row justify-content-center mt-2">
-                    <div class="col-8">
+                    <div class="col-12 col-md-8">
                         <h2>Crew CDN</h2>
-                        <p>You just need to include Lumito's compiled CSS and JS to your HTML File.</p>
+                        <p>You just need to include Crew's compiled CSS and JS to your HTML File.</p>
                         <div class="wrapCode">
                             <button class="btn-copy" data-toggle="tooltip" data-clipboard-target="#crewCDN" data-placement="right" title="Copy this code">
                                 Copy
                             </button>
-                            <code id="crewCDN">
-                                <span class="codetag">&lt;link</span>
-                                <span class="codeatt">rel=</span><span class="code3">"stylesheet"</span>
-                                <span class="codeatt">href=</span><span class="codein">"https://example.com/crews.css"</span><span class="codetag">&gt;</span>
-                                <br>
-                                <span class="codetag">&lt;script</span>
-                                <span class="codeatt">type=</span><span class="codein">"text/javascript"</span>
-                                <span class="codeatt">src=</span><span class="codein">"https://example.com/crew.js"</span><span class="codetag">&lt;/script&gt;</span>    
-                            </code>
+                            <div id="crewCDN">
+                                <pre><code>&lt;link rel="stylesheet" href="https://example.com/crew.min.css" &gt;
+                                &lt;script type="text/javascript" src="https://example.com/crew.min.js" &gt;&lt;/script></code ></pre >
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="mt-3">
-                    <p>Tạm ngưng, đi ngủ mai làm tiếp</p>
                 </div>
 
             </div>
         </div>
     </div>
-    <!-- /Start your project here-->
-
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
+    <!--End Get Started-->
+    <!-- Start your project here-->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-2">
+                    <div class="wrapCode">
+                        <button class="btn-copy" data-toggle="tooltip" data-clipboard-target="#crewCDN" data-placement="right" title="Copy this code">
+                            Copy
+                        </button>
+                        <div id="crewCDN">
+                            <pre><code>&lt;p&gt;crew team&lt;/p&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--SCRIPTS -->
+    <!--JQuery -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>

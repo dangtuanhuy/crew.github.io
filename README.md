@@ -52,10 +52,15 @@ CP1796M01 - CUSC APTECH
     </nav>
 <!-- End navbar -->
 
-# Cấu trúc khu vực copy
+# Cấu trúc Code Box
+<!-- Class wrapCode sẽ tạo một hộp chứa code-->
 <div class="wrapCode">
-    <button class="btn-copy" data-toggle="tooltip" data-clipboard-target="#ID" data-placement="right" title="Content of tooltip">Copy</button>
-    <code id="#ID">
-        Your content you want to copy
-    </code>
+    <!-- Class .btn-copy định dạng nút copy trong Code Box -->
+    <button class="btn-copy" data-toggle="tooltip" data-clipboard-target="#AreaID" data-placement="right" title="Copy this code">Copy</button>
+    <!--Nội dung trong div có ID #AreaID sẽ được copy khi nhấn nút-->
+    <div id="AreaID">
+        <!-- Code viết liền ngay sau thẻ <code> 
+        Không enter đầu dòng sau thẻ code -->
+        <pre><code>Your code</code ></pre >
+    </div>
 </div>
