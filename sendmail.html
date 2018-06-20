@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/crewlogo.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crew Library</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color scrolling-navbar">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="index.html">
+            <b>Crew</b>
+        </a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Documentation
+                    </a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Introduction</a>
+                        <a class="dropdown-item" href="#">Get Started</a>
+                        <a class="dropdown-item" href="#">Tutorial</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contact Us
+                    </a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">GitHub</a>
+                        <a class="dropdown-item" href="#">Facebook</a>
+                        <a class="dropdown-item" href="mailto:jeonkyosin@gmail.com" target="_top">Send Mail</a>
+                        <a class="dropdown-item" href="#">About Us</a>
+                    </div>
+                </li>
+            </ul>
+            <span class="navbar-text white-text text-uppercase" id="crewver">
+                version 1.0.1
+            </span>
+        </div>
+        <!-- Collapsible content -->
+
+    </nav>
+    <!-- End navbar -->
+
+    <!-- Section send mail -->
+    <div style="margin: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.7932762941305!2d105.77768341434303!3d10.033910692827964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0881fa301aa5d%3A0x27e73181695218ab!2sCUSC!5e0!3m2!1sen!2s!4v1529492981760" width="1500" height="300 frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    <section class="section" style="margin: 0px 50px">
+        <!--Section heading-->
+        <h2 class="section-heading h1 pt-4">Contact us</h2>
+        <!--Section description-->
+        <p class="section-description">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            matter of hours to help you.</p>
+    
+        <div class="row">
+    
+            <!--Grid column-->
+            
+            <div class="col-md-2  col-xl-2"  ></div>
+            <div class="col-md-5  col-xl-6"  >
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+    
+                    <!--Grid row-->
+                    <div class="row">
+    
+                        <!--Grid column-->
+                     
+                        <div class="col-md-6">
+                            <div class="md-form">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+    
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form">
+                                <input type="email" id="defaultForm-email" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+    
+                    </div>
+                    <!--Grid row-->
+    
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+    
+                    <!--Grid row-->
+                    <div class="row">
+    
+                        <!--Grid column-->
+                        <div class="col-md-12">
+    
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!--Grid row-->
+    
+                </form>
+    
+                <div class="center-on-small-only">
+                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                <div class="status"></div>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-md-3 col-xl-2">
+                <ul class="contact-icons">
+                    <li><i class="fa fa-map-marker fa-2x"></i>
+                        <p>CUSC
+                            1 Lý Tự Trọng, Tân An, Ninh Kiều, An Cư Ninh Kiều Can Tho</p>
+                    </li>
+    
+                    <li><i class="fa fa-phone fa-2x"></i>
+                        <p>+ 01 234 567 89</p>
+                    </li>
+    
+                    <li><i class="fa fa-envelope fa-2x"></i>
+                        <p>jeonkyosin@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2  col-xl-2"  ></div>
+            
+            
+            <!--Grid column-->
+    
+        </div>
+    
+    </section>
+    <!--Section: Contact v.2-->
+    
+    <!-- End send mail -->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body>
+
+</html>
