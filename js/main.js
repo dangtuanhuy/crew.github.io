@@ -13,28 +13,84 @@ document.addEventListener('DOMContentLoaded', function () {
     // End copy button
 
     // Start Code Box
-    var getCodeTag = document.querySelectorAll('pre code');
+    var getCodeTag = document.querySelectorAll('.lang-html pre code');
+    console.log(getCodeTag[1]);
     for (var gr = 0; gr < getCodeTag.length; gr++) {
-        var getS = getCodeTag[gr].innerHTML;
-        // Phân code ra thành cụm, tạo cache để xử lý
-        var words = getS.split(" "), codeCache = "";
-        for (var i = 0; i < words.length; i++) {
-            // Nếu có dấu =
-            if (words[i].indexOf("=") != -1) {
-                // Tiếp tục phân chia để xử lý
-                var devideTag = words[i].split("=");
-                words[i] = `&nbsp;<span class="codeatt">${devideTag[0]}=</span>`
-                +`<span class="codein">${devideTag[1]}</span>`;
+        var getText = getCodeTag[gr].innerHTML; getText.trim();
+        var tagTemp = /^&lt;/;
+        // Nếu bắt đầu bằng <
+        if (tagTemp.test(getText)) {
+            // Tạo bộ nhớ đệm cache
+            var cache = new String(), stt;
+            if(getText[4]!="!") {
+                cache+='<span class="codetag">'; stt = 1;
+            } else {
+                cache+='<span class="codecmt">'; stt = 5;
             }
-            // Nếu không có dấu =
-            else {
-                words[i] = `<span class="codetag">${words[i]}</span>`;
+            // Duyệt chuỗi từ đầu
+            for (var n = 0; n < getText.length; n++) {
+                if (stt == 1) {
+                    if (getText[n] == '&' && getText[n+4] == '!') {
+                        cache += `<span class="codecmt">${getText[n]}`;
+                        stt = 5;
+                    }
+                    // Nếu là space
+                    if (getText[n] == ' ') {
+                        cache += `</span><span class="codeatt">`;
+                        stt = 2;
+                    } else {
+                        // Không phải space
+                        cache += `${getText[n]}`;
+                    };
+                    if (getText[n] == '&' && getText[n + 1] == 'g' && getText[n + 3] == ';') {
+                        cache += `gt;`;
+                        n+=3; 
+                        // Nếu tiếp theo không phải <
+                        if(getText[n+1] != '&' && getText[n+2] != 'l' && getText[n+4] != ';') {
+                            stt=4; cache+='</span>';
+                            if(n!=getText.length-1) {
+                                cache+=`<span class="codenor" stt1>`;
+                            };
+                        };
+                    }
+                };
+                // Attribute color
+                if (stt == 2) {
+                    if (getText[n] == '=') {
+                        cache += `${getText[n]}</span><span class="codein">`;
+                        stt = 3;
+                    } else {
+                        cache += `${getText[n]}`;
+                    };
+                };
+                if(stt==3) {
+                    if(getText[n+1]!='"') {
+                        cache+=getText[n];
+                    } else {
+                        if(getText[n+2]==' ') {
+                            cache+=`${getText[n]}"</span><span class="codeatt">`; stt=2; n++;
+                        }
+                        if(getText[n+2]=='&' && getText[n+3]=='g' && getText[n+5]==';') {
+                            cache+=`${getText[n]}"</span><span class="codetag">`; stt=1; n++;
+                        }
+                    };
+                };
+                if(stt==4) {
+                    // Nếu hiện tại là <
+                    if (getText[n] == '&' && getText[n + 1] == 'l' && getText[n + 3] == ';') {
+                        cache+=`</span><span class="codetag" stt4-1>${getText[n]}`;
+                        stt=1;
+                    } else {
+                        if(getText[n]!=';') {
+                            cache+=`${getText[n]}`; 
+                        }               
+                    };
+                };
             };
-            // Xử lý xong cụm nào thì lưu cụm đó vào cache
-            codeCache += words[i];
-        }; // Kết thúc vòng lặp for xử lý cụm, tiến hành đồng bộ cache
-        getCodeTag[gr].innerHTML = codeCache;
-    }; // End Code Box
-
+        };
+        console.log(cache);
+        getCodeTag[gr].innerHTML = cache;
+    };
+    // End Code Box
 
 }, false);

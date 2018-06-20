@@ -25,7 +25,7 @@
 .wrapCode ::selection {
     background-color: transparent;
 }
-pre {padding:0; margin: 0;}
+pre {margin:0; padding:0;}
 .btn-copy {
     position: absolute;
     background-color: transparent;
@@ -42,6 +42,8 @@ pre {padding:0; margin: 0;}
 .codetag {color: dodgerblue;}
 .codeatt {color: mediumseagreen;}
 .codein {color: #A569BD;}
+.codenor {color: tomato;}
+.codecmt {color: gray;}
 /* End CSS FOR CODE AREA */
 
 /* Reponsive breakpoints */
