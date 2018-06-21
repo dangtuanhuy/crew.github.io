@@ -1,19 +1,77 @@
+<<<<<<< HEAD
 /******************************************
         Reponsive breakpoints 
 *******************************************/
+=======
+/* Css for presentation (khung gioi thieu) */
+>>>>>>> lmint
 .intro {
     background-image: linear-gradient(30deg, #fff1eb 0%, #ace0f9 100%);
     height: 34rem;
 }
 #crewver { 
     background-color: #f3f3f3; color: #4285f4!important; 
-    padding: 4px 8px; border-radius: 0.09rem; opacity: 0.85;
+    padding: 2.5px 6px; border-radius: 0.09rem; opacity: 0.65;
     margin-top: 0.4rem;
     font-size: 0.8rem;
 }
 
-.crewIntroH1 {font-size: 11vw;}
+/* START Css for code area */
+.wrapCode {
+    padding: 1.6rem 1rem 1rem 0.5rem;
+    background-color: #f5f3f3; 
+    display: inline-block;
+    border-radius: 0.75px;
+    position: relative;
+    text-align: left;
+    max-width: 100%;
+    overflow: auto;
+}
+.wrapCode code {display: block;}
+.wrapCode ::selection {
+    background-color: transparent;
+}
+pre {margin:0; padding:0;}
+.btn-copy {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    border-radius: .12rem;
+    font-size: 0.85rem;
+    color: #4285f4;
+    top: 6px; right: 6px;
+    transition: 0.2s ease-out;
+}
+.btn-copy:hover {background-color: #4285f4; color: #f3f3f3;}
+.btn-copy:active {background-color: #6e99e0;}
+.btn-copy:focus {outline: none;}
+.codetag {color: dodgerblue;}
+.codeatt {color: mediumseagreen;}
+.codein {color: #A569BD;}
+.codenor {color: tomato;}
+.codecmt {color: gray;}
+/* End CSS FOR CODE AREA */
 
+/* Footer CSS */
+footer {
+    background-color: #4285f4; 
+    color: #f3f3f3;
+    box-shadow: 0px -3px 8px 0px #aecbfb47, 1px 0px 5px 0px #41414152;
+    margin-top: 4vh;
+}
+.fa-heart {color: #e4725d;}
+.fa-facebook, .fa-google, .fa-github {font-size: 18pt;}
+footer ul li {display: inline;}
+footer ul li a{color: #f3f3f3;}
+footer ul li:hover a {color: #414141; transition: 0.3s ease-out;cursor: pointer;}
+footer ul {margin:0; padding: 0; display: block;}
+footer ul li:not(:last-child) {padding-right: 10vw;}
+
+/* Reponsive breakpoints */
+/* Only on mobile and down */
+@media (max-width: 576px) {
+    .intro h5 {font-size: 1rem;}
+}
 
 /*****************************************
             Format about us page
@@ -46,12 +104,16 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .crewIntroH1 {font-size: 2.5rem;}
+    
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+<<<<<<< HEAD
    
+=======
+    footer ul li:not(:last-child) {padding-right: 3vw;}
+>>>>>>> lmint
 }
 
 /* Large devices (desktops, 992px and up) */
