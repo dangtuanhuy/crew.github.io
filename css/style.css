@@ -1,4 +1,6 @@
-/* Reponsive breakpoints */
+/******************************************
+        Reponsive breakpoints 
+*******************************************/
 .intro {
     background-image: linear-gradient(30deg, #fff1eb 0%, #ace0f9 100%);
     height: 34rem;
@@ -13,28 +15,43 @@
 .crewIntroH1 {font-size: 11vw;}
 
 
-/* Format about us page */
-/* .card{
-    padding: 1.2rem;
-  
-} */
+/*****************************************
+            Format about us page
+ *****************************************/
+
+
+/* format round button */
 .social {
     width: 30px;
     height: 30px;
     padding:6px 0px;
     border-radius: 15px;
     line-height: 1.4px;
-  }
+    transition: 0.5;
+}
+.center h3,p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin-top: 18px;
+}
+.center h3{
+    font-weight: 700;
+    font-size: 30px;
+    color: #007bff;
+}
+.card img{
+    opacity: 0.9;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .crewIntroH1 {font-size: 2.5rem;}
-
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+   
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -43,6 +60,5 @@
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    
+@media (min-width: 1200px) {   
 }
