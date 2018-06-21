@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 stt=1; cache+=`<span class="codetag">`;
             };
         }
-        else if (getText.startsWith('&lt;!--')) {stt=5; cache+=`<span class="codecmt">`;};
+        else {stt=4; cache+=`<span class="codenor">`;};
 
         // Duyệt chuỗi từ đầu
         for (var n = 0; n < getText.length; n++) {
