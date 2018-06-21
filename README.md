@@ -54,13 +54,13 @@ CP1796M01 - CUSC APTECH
 
 # Cấu trúc Code Box
 <!-- Class wrapCode sẽ tạo một hộp chứa code-->
-<div class="wrapCode">
-    <!-- Class .btn-copy định dạng nút copy trong Code Box -->
-    <button class="btn-copy" data-toggle="tooltip" data-clipboard-target="#AreaID" data-placement="right" title="Copy this code">Copy</button>
-    <!--Nội dung trong div có ID #AreaID sẽ được copy khi nhấn nút-->
-    <div id="AreaID">
-        <!-- Code viết liền ngay sau thẻ <code> 
-        Không enter đầu dòng sau thẻ code -->
-        <pre><code>Your code</code ></pre >
+    <div class="wrapCode">
+        <!-- Class .btn-copy định dạng nút copy trong Code Box -->
+        <button class="btn-copy" data-toggle="tooltip" data-clipboard-target="#AreaID" data-placement="right" title="Copy this code">Copy</button>
+        <!--Nội dung trong div có ID #AreaID sẽ được copy khi nhấn nút-->
+        <div id="AreaID">
+            <!-- Code viết liền ngay sau thẻ <code> 
+            Không enter đầu dòng sau thẻ code -->
+            <pre><code>Your code</code ></pre >
+        </div>
     </div>
-</div>
