@@ -64,3 +64,113 @@ CP1796M01 - CUSC APTECH
             <pre><code>Your code</code ></pre >
         </div>
     </div>
+#Template of site
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" type="image/png" href="img/crewlogo.png" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Crew Library</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <!-- Your custom styles (optional) -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body class="white-skin">
+        <!-- Start navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark primary-color scrolling-navbar">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="index.html">
+                <b>Crew</b>
+            </a>
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Documentation
+                        </a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Introduction</a>
+                            <a class="dropdown-item" href="#">Get Started</a>
+                            <a class="dropdown-item" href="#">Tutorial</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact Us
+                        </a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">GitHub&ensp;
+                                <i class="fa fa-github pr-1"></i>
+                            </a>
+                            <a class="dropdown-item" href="#">Facebook</a>
+                            <a class="dropdown-item" href="mailto:jeonkyosin@gmail.com" target="_top">Send Mail</a>
+                            <a class="dropdown-item" href="#">About Us</a>
+                        </div>
+                    </li>
+                </ul>
+                <span class="navbar-text white-text text-uppercase" id="crewver">version 1.0.1</span>
+            </div>
+            <!-- Collapsible content -->
+        </nav><!-- End navbar -->
+        <!-- Your content here -->
+        
+        <!-- Your content here -->
+        <footer>
+            <div class="container-fluid mt-2">
+                <div class="row">
+                    <div class="col-12 text-center py-3">
+                        <h2 class="h2-responsive">Thank you for your visit</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-6">
+                                <p><span class="d-none d-md-inline-block">We're</span> Crew Team&ensp;<span><i class="fa fa-heart"></i></span></p>
+                                <p class="d-none d-md-block">You can contact me to make additional suggestions for improving this library.</p>
+                                <ul class="footerContact">
+                                    <li>
+                                        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-indigo mt-4">VIEW MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--SCRIPTS --><!--JQuery -->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script type="text/javascript" src="js/clipboard.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+    </html>
