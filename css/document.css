@@ -1,0 +1,26 @@
+
+
+/* Reponsive breakpoints */
+/* Only on mobile and down */
+@media (max-width: 576px) {
+    #documentIntro {font-size: 0.95rem;}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+   
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
