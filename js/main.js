@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Xử lý Copy button jquery lmint tự viết (đừng chỉnh sửa)
-    new ClipboardJS('.btn-copy');
+    // new ClipboardJS('.btn-copy');
     $('.btn-copy').tooltip();
     $('.btn-copy').on({
         click: function () {
