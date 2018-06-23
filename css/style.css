@@ -12,7 +12,8 @@
 
 /* START Css for code area */
 .wrapCode {
-    padding: 1.6rem 1rem 1rem 0.5rem;
+    padding: 1.65rem 1rem 1rem 0.5rem;
+    margin-bottom: 1rem;
     background-color: #f5f3f3; 
     display: inline-block;
     border-radius: 0.75px;
